@@ -27,12 +27,13 @@
             </div>
         </header>
         <section id="newsletter">
-            <div class="container">
+            <div class="container" id="form-container">
                 <h1>Subscribe To Our Newsletter</h1>
-                <form>
-                    <input type="email" placeholder="Enter Email">
-                    <button type="submit" class="button1">Subscribe</button>
+                <form id="subscribe_form">
+                    <input type="email" id="email" required placeholder="Enter Email">
+                    <button type="submit" id="subscribe" class="button1">Subscribe</button>
                 </form>
+              
             </div>
         </section>
 
@@ -72,33 +73,34 @@
                </article>
                <aside id="sidebar">
                    <div class="dark">
-                <h3>Get A Quote</h3>
-                <form class="quote">
+                <h3 id="gquote">Get A Quote</h3>
+                <form class="quote" id="quote">
                     <div>
                         <label>Name</label><br>
-                        <input type="text" placeholder="Name">
+                        <input type="text" required placeholder="Name">
                     </div>
                     <div>
                         <label>Email</label><br>
-                        <input type="email" placeholder="Email Address">
+                        <input type="email" id="email2" required placeholder="Email Address">
                     </div>
                     <div>
                         <label>Message</label><br>
                         <textarea placeholder="Message"></textarea>
                     </div>
-                       
-                        <button class="button1" type="submit">Send</button>
+                        <button class="button1" type="submit" id="quote2">Send</button>
                     </form>
             </div>
                </aside>
                 </div>    
+            </div>
         </section>
         <footer>
             <p>
                 Tor2's Robot Garden, Copyright &copy; 2017
             </p>
         </footer>
-        
+        <script src="script.js"></script>
+        <script src="ajax.js"></script>
     </body>
 
 </html>
